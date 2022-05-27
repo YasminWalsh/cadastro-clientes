@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.css">
+    <title>Editar cliente</title>
+</head>
+<body>
+    <header>
+        <a href="./../../index.html">Inicio</a>
+        <a href="./cadastrar.html">Cadastrar cliente</a>
+        <a href="./editar.html">Editar cliente</a>
+        <a href="./deletar.html">Deletar cliente</a>
+    </header>
+    <section>
+       
+        <h2>Editar cliente</h2>
+
+        <form action="#">
+            <h3>Buscar Cliente</h3>
+            <select name="buscarCliente" id="buscarCliente">
+               
+            </select>
+            <button id="botaoBusca" onclick="return false">Buscar cliente</button>
+        </form>
+        
+        <hr>
+        <h2>Editar cliente</h2>
+        <form action="#">
+
+            <input class="fieldEdit" type="text" name="nome" placeholder="Nome completo">
+            <input class="fieldEdit" type="text" name="cpf" placeholder="CPF">
+            <input class="fieldEdit" type="date" name="data_nasc">
+            <select class="fieldEdit" name="sexo" id="sexo">
+                <option selected value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+            <input class="fieldEdit" type="email" name="email" placeholder="E-mail">
+
+            <hr>
+            <h3>Cadastrar Endereço:</h3>
+            <input class="fieldEdit" type="number" name="cep" placeholder="CEP">
+            <input class="fieldEdit" type="text" name="rua" placeholder="Rua">
+            <input class="fieldEdit" type="number" name="numero" placeholder="Número"  >
+            <input class="fieldEdit" type="text" name="bairro" placeholder="Bairro">
+            <input class="fieldEdit" type="text" name="cidade" placeholder="Cidade">
+            <select class="fieldEdit" id="estado" name="estado">
+                <option selected value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+
+            <hr>
+            <h3>Cadastrar Contato:</h3>
+            <input class="fieldEdit" type="tel" name="telefone_fixo" placeholder="Telefone">
+
+            <button id="botaoEditar" onclick="return false">Editar</button>
+        </form>
+
+ <script type="module" src="./../js/controllers/editar.js"></script>
+
+
+</body>
+</html>
